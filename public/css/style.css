@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: var(--second-color);
+}
+
+body {
+    background-color: var(--sec-backcolor);
+}
+
+a:hover {
+    cursor: pointer !important;
+}
+
+:root {
+    --main-color: #FAFFFF;
+    --second-color: #02d433;
+    --third-color: #0097FE;
+    --sec-backcolor: #111A29;
+    --bg-color: #08090B;
+    --fourth-color: #FF8F1A;
+    --main-padding: 20px;
+}
+
+.navbar {
+    background-color: var(--sec-backcolor) !important;
+}
+
+nav span {
+    color: var(--second-color);
+}
+
+.icon {
+    font-weight: 900;
+}
+
+.main-nav a {
+    color: var(--main-color);
+}
+
+.main-nav a:hover {
+    color: var(--second-color);
+}
+
+#Home {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .4)), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+
+}
+
+.intro-text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+
+.intro-text h3 {
+    position: relative;
+}
+
+.intro-text h3::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: -20px;
+    background-color: var(--second-color);
+}
+
+.intro-text h1 {
+    font-size: 100px;
+}
+
+@media (max-width: 576px) {
+    .intro-text h1 {
+        font-size: 80px !important;
+    }
+
+    .intro-text h3::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        left: 35px;
+        background-color: var(--second-color);
+    }
+
+    @media (max-width:576px) {
+        .intro-text h3::before {
+            left: 25px;
+        }
+    }
+
+    .intro-text h3 {
+        text-align: center !important;
+    }
+}
+
+.intro-text h1 span {
+    color: var(--second-color);
+    font-weight: 900;
+}
+
+.intro-text a {
+    border-color: var(--second-color);
+    color: var(--second-color);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 100vh;
+    font-weight: 600;
+}
+
+.intro-text a:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+
+#About {
+    background-color: var(--sec-backcolor);
+}
+
+.under {
+    border-bottom: var(--second-color) 3px solid;
+}
+
+#About a {
+    border-color: var(--second-color);
+    color: var(--second-color);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: var(--second-color);
+    font-weight: 600;
+}
+
+#About a:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+
+.work-h {
+    color: var(--second-color);
+}
+
+#Workout .container .card {
+    overflow: hidden;
+}
+
+#Workout .container .card img {
+    padding-left: 0px;
+    padding-right: 0px;
+    transform: scale(1);
+    transition: ease 1s;
+}
+
+#Workout .container .card img:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover {
+    color: var(--second-color) !important;
+    cursor: pointer;
+}
+
+.btn-green {
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+}
+
+.btn-green:hover {
+    background-color: var(--second-color);
+}
+
+.diet-main {
+    color: var(--third-color);
+    font-weight: 700;
+}
+
+#Diet img {
+    border-radius: 50px;
+}
+
+#Diet .imgg {
+    width: 600px;
+    height: 410px;
+}
+
+@media (max-width:767px) {
+    .dite-text {
+        text-align: center;
+    }
+}
+
+.orange-main {
+    color: var(--fourth-color) !important;
+}
+
+.main-hr {
+    border: 2px solid var(--second-color);
+}
+
+#Contact {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url(../images/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 300px);
+}
+
+#Contact {
+    position: relative;
+    height: 500px !important;
+}
+
+#Contact .row {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form input:focus-visible {
+    outline: none;
+    border-color: var(--second-color) !important;
+}
+
+form textarea:focus-visible {
+    outline: none;
+    border: 1px solid;
+    border-color: var(--second-color) !important;
+}
+
+
+
+
+
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--second-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100vh;
+}
+
+#scrollButton:hover {
+    background-color: var(--fourth-color);
+}
+
+.special-header-contact {
+    margin-top: 50px;
+}
+
+
+.login-card {
+    border: 1px solid var(--second-color) !important;
+}
